@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+struct Rectangle {
+   int x1, y1;
+    int x2, y2;
+};
+
+int main()
+{
+    struct Rectangle rect;
+    int area;
+
+    scanf_s("%d %d %d %d", &rect.x1, &rect.y1, &rect.x2, &rect.y2);
+
+
+    int a = abs(rect.x2 - rect.x1);
+    int b = abs(rect.y2 - rect.y1);
+    area = a * b;
+
+    printf("%d", area);
+
+    return 0;
+}
